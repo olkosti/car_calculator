@@ -1,0 +1,11 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+.wrapp {
+    max-width: 1000px;
+    height: 700px;
+    border: 1px solid black;
+    margin: 0 auto;
+    padding: 50px;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кальлятор расчета стоимости автомобиля</title>
+    <link rel="stylesheet" href="assets/style/normalize.css">
+    <link rel="stylesheet" href="assets/style/style.css">
+</head>
+
+<body>
+    <div class="wrapp">
+        <h2 class="calculator__title">Узнайте стоимость Вашего автомобиля всего за 1 минуту</h2>
+        <form action="" class="calculator__form">
+            <select name="brands" id="brand-select" class="calculator__brand">
+                <option value="">Марка</option>
+                <option value="renault">Renault</option>
+                <option value="opel">Opel</option>
+                <option value="mazda">Mazda</option>
+                <option value="jaguar">Jaguar</option>
+            </select>
+            <select name="models" id="model-select" class="calculator__model">
+                <option value="">Модель</option>
+                <option value="logan">Logan</option>
+                <option value="corsa">Corsa</option>
+                <option value="cx5">CX-5</option>
+                <option value="fpace">F-Pacer</option>
+            </select>
+            <div class="calculator__fuel">
+                <p class="fuel__title">Тип топлива</p>
+                <input type="radio" name="fuel" id="fuel-petrol" value="petrol">
+                <label for="fuel-petrol">Бензин</label>
+                <input type="radio" name="fuel" id="fuel-diesel" value="diesel">
+                <label for="fuel-diesel">Дизель</label>
+                <input type="radio" name="fuel" id="fuel-gas" value="gas">
+                <label for="fuel-gas">Газ</label>
+                <input type="radio" name="fuel" id="fuel-electricity" value="electricity">
+                <label for="fuel-electricity">Электричество</label>
+            </div>
+            <div class="calculator__capacity">
+                <p class="capacity__title">Объем двигателя, см<sup>3</sup></p>
+                <input type="text" class="capacity__text">
+            </div>
+            <div class="calculator__condition">
+                <p class="condition__title">Состояние автомобиля</p>
+                <input type="radio" name="condition" id="condition-new" value="new">
+                <label for="condition-new">Новый</label>
+                <input type="radio" name="condition" id="condition-used" value="used">
+                <label for="condition-used">Поддержанный</label>
+            </div>
+            <!-- если автомобиль подержанный, то появляется чекбокс или радиокнопка с количеством владельцев (1-2 владельца, более 3х) -->
+            <div class="calculator__owners">
+                <p class="owners__title">Количество владельцев</p>
+                <input type="radio" name="owners" id="owners-onetwo" value="onetwo">
+                <label for="owners-onetwo">1-2 владельца</label>
+                <input type="radio" name="owners" id="owners-three" value="three">
+                <label for="owners-three">более 3х владельцев</label>
+            </div>
+            <!-- ---------------------------------------------------------------------- -->
+
+            <div class="calculator__payment">
+                <p class="payment__title">Вариант оплаты</p>
+                <input type="radio" name="payment" id="payment-card" value="card">
+                <label for="payment-card">Карта</label>
+                <input type="radio" name="payment" id="payment-cash" value="cash">
+                <label for="payment-cash">Наличные</label>
+                <input type="radio" name="payment" id="payment-account" value="account">
+                <label for="payment-account">Расчетный счет юридического лица</label>
+            </div>
+        </form>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
